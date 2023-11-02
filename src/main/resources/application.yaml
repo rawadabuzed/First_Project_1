@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+
+tvmaze:
+  url: "https://api.tvmaze.com/"
+
+lastfm:
+  url: "https://ws.audioscrobbler.com/2.0/"
+
+second_micro_service:
+  url: "http://localhost:8091"
